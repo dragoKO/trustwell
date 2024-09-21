@@ -9,7 +9,7 @@ import org.junit.runner.RunWith;
 @CucumberOptions(
 
         features = "@target/rerun.txt",
-        glue = "com/capitalOne/steps"
+        glue = "com/trustwell/steps"
 
 )
 public class FailedTestRunner {
