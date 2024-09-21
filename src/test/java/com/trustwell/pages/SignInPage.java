@@ -19,7 +19,6 @@ public class SignInPage {
     public WebElement continueButton;
 
 
-
     public SignInPage() {
         PageFactory.initElements(Driver.getDriver(), this);
     }

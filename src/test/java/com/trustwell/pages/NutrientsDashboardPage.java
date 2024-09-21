@@ -30,10 +30,6 @@ public class NutrientsDashboardPage {
     public WebElement totalCalories;
 
 
-
-
-
-
     public NutrientsDashboardPage() {
         PageFactory.initElements(Driver.getDriver(), this);
     }

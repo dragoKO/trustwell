@@ -30,7 +30,7 @@ public class CalculateNutrients {
         nutrients = dataTable.asMaps().get(0);
         nutrientsDashboardPage = new NutrientsDashboardPage();
         nutrients.forEach((k, v) -> {
-            if (k.equalsIgnoreCase("protein")) return;
+            if (k.equalsIgnoreCase("protein")) return; // protein already entered. It will be a bug.
             nutrientsDashboardPage.addNutrientButton.click();
             nutrientsDashboardPage.nutrientNameInputField.sendKeys(k);
             nutrientsDashboardPage.nutrientValueInputField.sendKeys(v);
@@ -53,7 +53,7 @@ public class CalculateNutrients {
     @And("the calories calculation should be correct based on the entered values {string}")
     public void theCaloriesCalculationShouldBeCorrectBasedOnTheEnteredValues(String expectedCalories) {
         String currentCalories = nutrientsDashboardPage.totalCalories.getText();
-        int startIndex=currentCalories.indexOf(": ")+2;
-        Assert.assertEquals(expectedCalories,currentCalories.substring(startIndex));
+        int startIndex = currentCalories.indexOf(": ") + 2;
+        Assert.assertEquals(expectedCalories, currentCalories.substring(startIndex));
     }
 }
