@@ -53,7 +53,7 @@ public class CalculateNutrients {
     @And("the calories calculation should be correct based on the entered values {string}")
     public void theCaloriesCalculationShouldBeCorrectBasedOnTheEnteredValues(String expectedCalories) {
         String currentCalories = nutrientsDashboardPage.totalCalories.getText();
-        int startIndex=currentCalories.indexOf(": ")+1;
+        int startIndex=currentCalories.indexOf(": ")+2;
         Assert.assertEquals(expectedCalories,currentCalories.substring(startIndex));
     }
 }
