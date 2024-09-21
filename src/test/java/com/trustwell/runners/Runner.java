@@ -15,7 +15,7 @@ import org.junit.runner.RunWith;
         },
 
         features = "src/test/resources/features",
-        glue = "com/capitalOne/steps",
+        glue = "com/trustwell/steps",
         dryRun = false,
         tags = "@ui"
 

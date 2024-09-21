@@ -10,7 +10,7 @@ public class ConfigurationReader {
 
       static {
           try {
-              FileInputStream file = new FileInputStream("configuration.properties");
+              FileInputStream file = new FileInputStream("src/test/resources/environments/qa1.properties");
               properties.load(file);
           } catch (IOException e) {
               System.out.println("File not found in ConfigurationReader class");
