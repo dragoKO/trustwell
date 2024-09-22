@@ -35,7 +35,6 @@ public class CalculateNutrients {
             nutrientsDashboardPage.nutrientNameInputField.sendKeys(k);
             nutrientsDashboardPage.nutrientValueInputField.sendKeys(v);
             nutrientsDashboardPage.submitButton.click();
-            System.out.println(k + v);
         });
     }
 
